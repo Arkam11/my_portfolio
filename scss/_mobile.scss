@@ -55,6 +55,13 @@
       "job3";
     grid-template-columns: 1fr;
   }
+
+  .education {
+    grid-template-areas:
+      "headin-2"
+      "edu1" "edu2" "edu3";
+    grid-template-columns: 1fr;
+  }
 }
 
 // samrtphones

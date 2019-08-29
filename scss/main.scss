@@ -76,7 +76,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio" "heading1 heading1 heading1"
+    "bioimage bio bio" "heading-1 heading-1 heading-1"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
@@ -89,11 +89,6 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
-  }
-
-  .heading-1 {
-    grid-area: heading-1;
     font-size: 1.5rem;
   }
 
@@ -110,6 +105,33 @@ main {
   }
 
   .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+.education {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "heading-2 heading-2 heading-2"
+    "edu1 edu2 edu3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .edu-1 {
+    grid-area: edu1;
+  }
+
+  .edu-2 {
+    grid-area: edu2;
+  }
+
+  .edu-3 {
+    grid-area: edu3;
+  }
+
+  .edu {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
